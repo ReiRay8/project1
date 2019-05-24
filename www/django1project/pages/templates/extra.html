@@ -1,0 +1,73 @@
+<div
+	 class="container">
+
+	
+
+
+<div class="card" style="width: 10rem;">
+  <img src="{% static 'images/rein.jpg' %}">
+  <div class="card-body">
+    <h5 class="card-title">REINHARDY</h5>
+    <p class="card-text">Hello there trying to work with django</p>
+    <a href="{% url 'about' %}" class="btn btn-primary">About</a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="{% static ' js/bootstrap.min.js' %}"></script>
+
+.navbar-dark {
+  .navbar-brand {
+    color: $navbar-dark-brand-color;
+
+    @include hover-focus {
+      color: $navbar-dark-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-color;
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-dark-color;
+    border-color: $navbar-dark-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+    a {
+      color: $navbar-dark-active-color;
+
+      @include hover-focus {
+        color: $navbar-dark-active-color;
+      }
+    }
+  }
+}
